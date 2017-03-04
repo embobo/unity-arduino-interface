@@ -1,10 +1,9 @@
-# Specifics #
+# Unity #
 #------------#
 /unity-arduino/*
 !/unity-arduino/Assets
 /unity-arduino/Assets/*
 !/unity-arduino/Assets/Scripts/
-
 *.meta
 
 # Compiled source #
