@@ -2,14 +2,20 @@
 
 This repo is for tracking my attempts to create an interface with Arduino for Unity.
 
-## Serial Connection Interface
+## Network Interface
 
-### Public methods needed:
+* `void Open ();` - open the connection, throw exception if failed
 
-* `void OpenConnection();`
+* `void Close ();` - close the connection
 
-* `void CloseConnection();`
+* `string Read ();` - read line from the connection
 
-* `string ReadLine();`
+* `void Write (string msg);` - write to the connection
 
-* `void Write(string msg);`
+## Device Key Input Interface
+
+* `bool GetKeyDown (char key);` - return true if the key was pressed during this frame, otherwise false
+
+* `bool GetKeyPressed (char key);` - return true if the key is currently pressed, otherwise false
+
+* `bool GetKeyUp (char key);` - return true if the key was released during this frame, otherwise false
