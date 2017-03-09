@@ -1,9 +1,10 @@
 # Unity #
 #------------#
-/unity-arduino/*
-!/unity-arduino/Assets
-/unity-arduino/Assets/*
-!/unity-arduino/Assets/Scripts/
+/fitboard-configuration/*
+!/fitboard-configuration/Assets
+/fitboard-configuration/Assets/*
+!/fitboard-configuration/Assets/Scripts/
+
 *.meta
 
 # Compiled source #
