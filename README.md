@@ -1,18 +1,34 @@
 # Unity Arduino Test README
 
-This repo is for tracking my attempts to create an interface with Arduino for Unity.
+Provided are the requirements for Unity setup and interfaces for key components of the library
 
-## Network Interface
+1. [Unity Settings for Serial Port](#serial-port-settings)
+2. [Unity Settings for Arduino](#fitboard-arduino-settings)
+3. [Fitboard Interace Methods](#fitboard-interface-methods)
 
-* `void Open ();` - open the connection, throw exception if failed
+## Unity Settings
 
-* `void Close ();` - close the connection
+### Serial Port Settings
 
-* `string Read ();` - read line from the connection
+Go to *Unity /> Edit /> Project Settings /> Player*
 
-* `void Write (string msg);` - write to the connection
+In Inspector set *Optimization /> API Compatibility Level* to '.NET 2.0'
 
-## Device Key Input Interface
+=
+
+### Fitboard Arduino Settings
+
+**FitboardDeviceInput.cs must be loaded before all other dependent Monobehavior scripts**
+
+Go to *Edit /> Project Settings /> Script Execution Order*
+
+In Inspector add FitboardDeviceInput.cs
+
+Set time to at least -100 (or lower than lowest dependent script)
+
+## Fitboard Interface Methods
+
+Note that these are contained in 'DeviceKeyInputIF.cs' 
 
 * `bool GetKeyDown (char key);` - return true if the key was pressed during this frame, otherwise false
 
