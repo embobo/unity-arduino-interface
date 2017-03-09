@@ -18,6 +18,8 @@ In Inspector set *Optimization /> API Compatibility Level* to '.NET 2.0'
 
 ### Fitboard Arduino Settings
 
+A prefab 'FitboardManager' will be provided in the asset bundle, it must be loaded in the main menu. It will not be destroyed on loading other scenes.
+
 **FitboardDeviceInput.cs must be loaded before all other dependent Monobehavior scripts**
 
 Go to *Edit /> Project Settings /> Script Execution Order*
