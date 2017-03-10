@@ -48,6 +48,10 @@ Interface GameObjectConfigurer {
 }
 ```
 
+##### Reasoning
+
+I think this is better for now because the buttonLabel can be used to retrieve the button trigger from a fitboard class. This removes the need for the UI to know what the button's trigger is and the button trigger can be in a Unity independent class.
+
 **OR**
 
 #### Assign Buttons to Objects with buttonTrigger
