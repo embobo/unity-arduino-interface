@@ -16,7 +16,9 @@ A fitboard button consists of a software facing `char trigger` and a user facing
 * name used by physical therapist and clients to identify fitboard buttons
 * used in configuration screen
 
-### Layout Idea 1
+### Button-GameObject Assignment Ideas
+
+#### ~~Assign Objects to Buttons~~
 
 ```c#
 Interface FitboardConfigurer {
@@ -26,5 +28,34 @@ Interface FitboardConfigurer {
   void UnassignButton (string buttonLabel);
   
   // a way to retrieve the assignments?
+}
+```
+>
+No no no no no no no. The buttons shouldn't care what they're assigned to- that doesn't make sense. The objects assigned to a button care what their button(s) can be.
+>
+
+#### Assign Buttons to Objects with buttonlabel
+
+```c#
+Interface GameObjectConfigurer {
+
+  void AssignButtonToObject (string objName, string buttonLabel);
+  
+  void UnassignButtonToObject (string objName, string buttonLabel);
+  
+}
+```
+
+**OR**
+
+#### Assign Buttons to Objects with buttonTrigger
+
+```c#
+Interface GameObjectConfigurer {
+
+  void AssignButtonToObject (string objName, char buttonTrigger);
+  
+  void UnassignButtonToObject (string objName, char buttonTrigger);
+  
 }
 ```
