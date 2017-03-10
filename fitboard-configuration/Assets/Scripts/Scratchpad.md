@@ -16,6 +16,8 @@ A fitboard button consists of a software facing `char trigger` and a user facing
 * name used by physical therapist and clients to identify fitboard buttons
 * used in configuration screen
 
+=
+
 ### Button-GameObject Assignment Ideas
 
 #### ~~Assign Objects to Buttons~~
