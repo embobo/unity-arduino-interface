@@ -1,4 +1,4 @@
-# Unity Arduino Test README
+# Unity Arduino Interfacing as an Input Controller
 
 Provided are the requirements for Unity setup and interfaces for key components of the library
 
@@ -6,19 +6,19 @@ Provided are the requirements for Unity setup and interfaces for key components 
 2. [Unity Settings for Arduino](#fitboard-arduino-settings)
 3. [Fitboard Interace Methods](#fitboard-interface-methods)
 
-## Unity Settings
+## Setting Up Unity
 
 ### Serial Port Settings
 
-Go to *Unity /> Edit /> Project Settings /> Player*
+Go to ***Unity** > **Edit** > **Project Settings** > **Player***
 
-In Inspector set *Optimization /> API Compatibility Level* to '.NET 2.0'
+This will open a dialog in the Unity Inspector window. Under ***Optimization*** set ***API Compatibility Level*** to *.NET 2.0*
 
 =
 
 ### Fitboard Arduino Settings
 
-A prefab 'FitboardManager' will be provided in the asset bundle, it must be loaded in the main menu. It will not be destroyed on loading other scenes.
+A prefab 'GameManager' will be provided in the asset bundle, it must be loaded in the main menu. It will not be destroyed on loading other scenes.
 
 **FitboardDeviceInput.cs must be loaded before all other dependent Monobehavior scripts**
 
